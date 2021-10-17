@@ -208,7 +208,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Objekten kommer visas ett &aring;t g&aring;ngen.<br/><br/>' +
 				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
-				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt..<br/><br/></p>'+
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
 				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
