@@ -177,12 +177,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Satt ditt vanstra finger på tangenten <b>E</b> for objekt som tillhor kategorin <font color="#0000ff">leftAttribute.</font>' +
+				'<br/>Satt ditt hogra finger på <b>I</b> for objekt som tillhor kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'Om du gor ett misstag kommer ett rod <font color="#ff0000"><b>X</b></font> dyka upp. ' +
+				'Tryck på den andra tangenten for att fortsatta.<br/>' +
+				'<u>Var sa snabb du kan</u> samtidigt som du gor ratt.<br/><br/></p>'+
+				'<p align="center">tryck pa <b>space bar</b> nar du ar redo att borja.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
