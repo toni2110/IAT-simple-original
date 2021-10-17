@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://toni2110.github.io/IAT-simple-original/IAT-base.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
