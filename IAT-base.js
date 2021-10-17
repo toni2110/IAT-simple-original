@@ -1311,16 +1311,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		}
 		//Set messages to the scorer.
 		scorer.addSettings('message',scoreMessageObject);
-		
-		showDebriefing:false, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
-//Texts for the trials that show the debriefing.
-preDebriefingText : 'Tryck p&aring; space f&ouml;r att se ditt resultat', //Text in the trial that comes before showing the debriefing.
-preDebriefingTouchText : 'Tryck p&aring; det nedre gr&ouml;na omr&aring;det f&ouml;r att se ditt resultat', //Touch version for the text in the trial that comes before showing the debriefing.
-debriefingTextTop : 'Ditt resultat:', //Will be shown above the feedback text.
-//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
-//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
-//We strongly recommend that you provide all these details in the debriefing of the experiment.
-debriefingTextBottom : 'Ditt resultat &auml;r inget definitiv utv&auml;rdering av dina attityder utan &auml;r enbart avsett f&ouml;r utbildningssyfte.', //Will be shown below the feedback text. 
 
 		return API.script;
 	}
