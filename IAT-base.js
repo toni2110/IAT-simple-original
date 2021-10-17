@@ -2,7 +2,7 @@
 define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) {
 
 	/**
-	Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Elad
+	Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Elad. Modified by toni2110.
 	 * @param  {Object} options Options that replace the defaults...
 	 * @return {Object}         PIP script
 	**/
@@ -26,13 +26,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				background: '#ffffff',
 				borderWidth: 5,
 				canvasBackground: '#ffffff',
-				borderColor: 'lightblue'
+				borderColor: 'black'
 			},
 			//When scoring, we will consider the compatible condition the pairing condition that requires response with one key to [category1,attribute1] and the other key to [category2,attribute2]
 			category1 : {
-				name : 'Morkhyade', //Will appear in the data and in the default feedback message.
+				name : 'M&ouml;rkhyade personer', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'Morkhyade'}, //Name of the category presented in the task.
+					media : {word : 'M&ouml;rkhyade personer'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -48,9 +48,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
 			category2 :	{
-				name : 'Vita', //Will appear in the data and in the default feedback message.
+				name : 'Ljushyade personer', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'Vita'}, //Name of the category presented in the task.
+					media : {word : 'Ljushyade personer'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -67,42 +67,42 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			attribute1 :
 			{
-				name : 'Bad words',
+				name : 'Negativa ord',
 				title : {
-					media : {word : 'Bad words'},
+					media : {word : 'Negativa ord'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'awful'},
-					{word: 'failure'},
-					{word: 'agony'},
-					{word: 'hurt'},
-					{word: 'horrible'},
-					{word: 'terrible'},
-					{word: 'nasty'},
-					{word: 'evil'}
+					{word: 'hemsk'},
+					{word: 'misstag'},
+					{word: 'sm&auml;rta'},
+					{word: 'ont'},
+					{word: 'avskyv&auml;rd'},
+					{word: 'obehaglig'},
+					{word: '&auml;cklig'},
+					{word: 'ond'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 			},
 			attribute2 :
 			{
-				name : 'Good words',
+				name : 'Positiva ord',
 				title : {
-					media : {word : 'Good words'},
+					media : {word : 'Positiva ord'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'laughter'},
-					{word: 'happy'},
-					{word: 'glorious'},
-					{word: 'joy'},
-					{word: 'wonderful'},
-					{word: 'peace'},
-					{word: 'pleasure'},
-					{word: 'love'}
+					{word: 'skratt'},
+					{word: 'gl&auml;dje'},
+					{word: 'himmelsk'},
+					{word: 'lycka'},
+					{word: 'underbar'},
+					{word: 'fred'},
+					{word: 'n&ouml;je'},
+					{word: 'k&auml;rlek'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -153,8 +153,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			fontColor : '#000000', //The default color used for printed messages.
 			
 			//Text and style for key instructions displayed about the category labels.
-			leftKeyText : 'Press "E" for', 
-			rightKeyText : 'Press "I" for', 
+			leftKeyText : 'Tryck p&aring; "E" f&ouml;r', 
+			rightKeyText : 'Tryck p&aring; "I" f&ouml;r', 
 			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'or', 
@@ -162,8 +162,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			
 			instWidth : 99, //The width of the instructions stimulus
 			
-			finalText : 'Press space to continue to the next task', 
-			finalTouchText : 'Touch the bottom green area to continue to the next task',
+			finalText : 'Tryck p&aring; space f&ouml;r att forts&auml;tta till n&auml;sta uppgift', 
+			finalTouchText : 'Tryck p&aring; det nedre gr&ouml;na omr&aring;det f&ouml;r att forts&auml;tta till n&auml;sta uppgift',
 
 			touchMaxStimulusWidth : '50%', 
 			touchMaxStimulusHeight : '50%', 
@@ -177,12 +177,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Satt ditt vanstra finger på tangenten <b>E</b> for objekt som tillhor kategorin <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Satt ditt hogra finger på <b>I</b> for objekt som tillhor kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'Om du gor ett misstag kommer ett rod <font color="#ff0000"><b>X</b></font> dyka upp. ' +
-				'Tryck på den andra tangenten for att fortsatta.<br/>' +
-				'<u>Var sa snabb du kan</u> samtidigt som du gor ratt.<br/><br/></p>'+
-				'<p align="center">tryck pa <b>space bar</b> nar du ar redo att borja.</font></p></div>',
+				'Placera ett av dina v&auml;nstra fingrar p&aring; tangenten <b>E</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">leftAttribute.</font>' +
+				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
+				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
+				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -190,26 +190,26 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the the <b>left</b> green area for items that belong to the category <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det<b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Objekten kommer visas ett &aring;t g&aring;ngen.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Var sa snabb du kan</u> while being accurate.',
+						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>ar s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Tryck p&aring; <b>det l&auml;gre </b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#336600">leftCategory</font>. ' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#336600">rightCategory</font>.<br/>' +
-				'Items will appear one at a time.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Var sa snabb du kan</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Placera ett av dina v&auml;nstra fingrar p&aring; tangenten <b>E</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font>. ' +
+				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font>.<br/>' +
+				'Objekten kommer visas ett &aring;t g&aring;ngen.<br/><br/>' +
+				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
+				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt..<br/><br/></p>'+
+				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -217,26 +217,26 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the <b>left</b> green area for items that belong to the category <font color="#336600">leftCategory</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#336600">rightCategory</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font>.<br/>',
+						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font>.<br/>',
+						'Objekten kommer visas ett &aring;t g&aring;ngen.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Var sa snabb du kan</u> while being accurate.',
+						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' + 
-				'<u>Var sa snabb du kan</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Anv&auml;nd tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Anv&auml;nd tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font> samt f&ouml;r  <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Varje objekt tillh&ouml;r endast en kategori.<br/><br/>' +
+				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
+				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' + 
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
@@ -245,23 +245,23 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 					'<br/>',
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.</br>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.</br>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Var sa snabb du kan</u> while being accurate.</br>',
+						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.</br>',
+						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.</br>',
+							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Var sa snabb du kan</u> samtidigt som du trycker r&auml;tt.</br>',
 						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'This is the same as the previous part.<br/>' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'<u>Var sa snabb du kan</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Denna del &auml;r samma som f&ouml;rra delen.<br/>' +
+				'Anv&auml;nd tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Anv&auml;nd tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Varje objekt tillh&ouml;r endast en kategori.<br/><br/>' +
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
 					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
@@ -269,23 +269,23 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.<br/>',
 						'<br/>',
-						'<u>Var sa snabb du kan</u> while being accurate.<br/>',
+						'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/>',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>Watch out, the labels have changed position!</b><br/>' +
-				'Use the left finger on the <b>E</b> key for <font color="#336600">leftCategory</font>.<br/>' +
-				'Use the right finger on the <b>I</b> key for <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Var sa snabb du kan</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'<b>Var beredd, kategorierna har bytt position!</b><br/>' +
+				'Anv&auml;nd det v&auml;nstra fingret f&ouml;r tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font>.<br/>' +
+				'Anv&auml;nd det h&ouml;gra fingret f&ouml;r tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font>.<br/><br/>' +
+				'<u>ar s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
@@ -294,13 +294,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
 						'Watch out, the labels have changed position!<br/>',
-							'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items.<br/>',
-							'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items.<br/>',
-							'Items will appear one at a time.',
+							'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> r&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> items.<br/>',
+							'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> r&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> items.<br/>',
+							'Objekten kommer visas ett &aring;t g&aring;ngen.',
 							'<br/>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Var sa snabb du kan</u> while being accurate.<br/>',
+							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/>',
 						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
