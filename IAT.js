@@ -3,9 +3,9 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-simple-original/IAT-base.js'],
 
 	return iatExtension({
 		category1 : {
-			name : 'Morkhyade', //Will appear in the data.
+			name : 'M&ouml;rkhyade personer', //Will appear in the data.
 			title : {
-				media : {word : 'Morkhyade'}, //Name of the category presented in the task.
+				media : {word : 'M&ouml;rkhyade personer'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
@@ -21,9 +21,9 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-simple-original/IAT-base.js'],
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 		category2 :	{
-			name : 'Vita', //Will appear in the data.
+			name : 'Ljushyade personer', //Will appear in the data.
 			title : {
-				media : {word : 'Vita'}, //Name of the category presented in the task.
+				media : {word : 'Ljushyade personer'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
