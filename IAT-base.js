@@ -178,7 +178,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Placera ett av dina v&auml;nstra fingrar p&aring; tangenten <b>E</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; tangenten <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
 				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
 				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
@@ -204,7 +204,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Placera ett av dina v&auml;nstra fingrar p&aring; tangenten <b>E</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font>. ' +
-				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font>.<br/>' +
+				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; tangenten <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font>.<br/>' +
 				'Objekten kommer visas ett &aring;t g&aring;ngen.<br/><br/>' +
 				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
