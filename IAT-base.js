@@ -3,6 +3,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 	/**
 	Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Elad. Modified by toni2110.
+
 	 * @param  {Object} options Options that replace the defaults...
 	 * @return {Object}         PIP script
 	**/
@@ -139,12 +140,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindError : true,
 
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Press the other key to continue.<p/>',
+			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
+			'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta..<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Touch the other side to continue.<p/>',
+			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
+			'TTryck p&aring; den andra sidan f&ouml;r att forts&auml;tta..<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -162,7 +163,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			
 			instWidth : 99, //The width of the instructions stimulus
 			
-			showDebriefing : true, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
+			showFB : true, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
 						//Texts for the trials that show the debriefing.
 			preDebriefingText : 'Press space to see your result', //Text in the trial that comes before showing the debriefing.
 			preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
@@ -172,8 +173,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				//We strongly recommend that you provide all these details in the debriefing of the experiment.
 			debriefingTextBottom : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.', //Will be shown below the feedback text. 
 			
-			finalText : 'Tryck p&aring; space f&ouml;r att forts&auml;tta till n&auml;sta uppgift', 
-			finalTouchText : 'Tryck p&aring; det nedre gr&ouml;na omr&aring;det f&ouml;r att forts&auml;tta till n&auml;sta uppgift',
+			finalText : 'Tryck på space för att fortsätta till nästa uppgift', 
+			finalTouchText : 'Tryck på det nedre gröna området för att fortsätta till nästa uppgift',
 
 			touchMaxStimulusWidth : '50%', 
 			touchMaxStimulusHeight : '50%', 
@@ -189,7 +190,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Placera ett av dina v&auml;nstra fingrar p&aring; tangenten <b>E</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">leftAttribute.</font>' +
 				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; tangenten <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
+				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp.' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
 				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
 				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
