@@ -98,7 +98,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
 					{word: 'skratt'},
 					{word: 'glädje'},
-					{word: 'himmelsk'},
+					{word: 'fantastisk'},
 					{word: 'lycka'},
 					{word: 'underbar'},
 					{word: 'fred'},
