@@ -157,10 +157,20 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			rightKeyText : 'Tryck "I" för', 
 			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
-			orText : 'or', 
+			orText : 'eller', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
 			
 			instWidth : 99, //The width of the instructions stimulus
+			
+			showDebriefing : false, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
+						//Texts for the trials that show the debriefing.
+			preDebriefingText : 'Press space to see your result', //Text in the trial that comes before showing the debriefing.
+			preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
+			debriefingTextTop : 'Your result:', //Will be shown above the feedback text.
+				//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
+				//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
+				//We strongly recommend that you provide all these details in the debriefing of the experiment.
+			debriefingTextBottom : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.', //Will be shown below the feedback text. 
 			
 			finalText : 'Tryck p&aring; space f&ouml;r att forts&auml;tta till n&auml;sta uppgift', 
 			finalTouchText : 'Tryck p&aring; det nedre gr&ouml;na omr&aring;det f&ouml;r att forts&auml;tta till n&auml;sta uppgift',
@@ -293,7 +303,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Watch out, the labels have changed position!<br/>',
+						'Var beredd, kategorierna har bytt position!<br/>',
 							'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> r&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> items.<br/>',
 							'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> r&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> items.<br/>',
 							'Objekten kommer visas ett &aring;t g&aring;ngen.',
@@ -313,15 +323,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Your responses suggested a strong automatic preference for categoryB over categoryA.',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your responses suggested a moderate automatic preference for categoryB over categoryA.',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Your responses suggested a slight automatic preference for categoryB over categoryA.',
-			fb_equal_CatAvsCatB : 'Your responses suggested no automatic preference between categoryA and categoryB.',
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en stark automatisk preferens f&ouml;r categoryB &ouml;ver categoryA.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en medelstark automatisk preferens f&ouml;r categoryB &ouml;ver categoryA.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en svag automatisk preferens f&ouml;r categoryB &ouml;ver categoryA.',
+			fb_equal_CatAvsCatB : 'Dina svar antyder att du inte har n&aring;gra automatiska preferenser mellan categoryA och categoryB.',
 
 			//Error messages in the feedback
-			manyErrors: 'There were too many errors made to determine a result.',
-			tooFast: 'There were too many fast trials to determine a result.',
-			notEnough: 'There were not enough trials to determine a result.'
+			manyErrors: 'Det var f&ouml;r m&aring;nga fel f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.',
+			tooFast: 'Det var f&ouml;r m&aring;nga snabba f&ouml;rs&ouml;k f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.',
+			notEnough: 'Det var inte tillr&auml;ckligt m&aring;nga f&ouml;rs&ouml;k f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.'
 		};
 
 		// extend the "current" object with the default
