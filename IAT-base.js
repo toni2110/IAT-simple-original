@@ -76,11 +76,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
 					{word: 'hemsk'},
 					{word: 'misstag'},
-					{word: 'sm&auml;rta'},
+					{word: 'smärta'},
 					{word: 'ont'},
-					{word: 'avskyv&auml;rd'},
+					{word: 'avskyvärd'},
 					{word: 'obehaglig'},
-					{word: '&auml;cklig'},
+					{word: 'äcklig'},
 					{word: 'ond'}
 				],
 				//Stimulus css
@@ -96,13 +96,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
 					{word: 'skratt'},
-					{word: 'gl&auml;dje'},
+					{word: 'glädje'},
 					{word: 'himmelsk'},
 					{word: 'lycka'},
 					{word: 'underbar'},
 					{word: 'fred'},
-					{word: 'n&ouml;je'},
-					{word: 'k&auml;rlek'}
+					{word: 'nöje'},
+					{word: 'kärlek'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -162,7 +162,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			
 			instWidth : 99, //The width of the instructions stimulus
 			
-			showDebriefing : false, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
+			showDebriefing : true, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
 						//Texts for the trials that show the debriefing.
 			preDebriefingText : 'Press space to see your result', //Text in the trial that comes before showing the debriefing.
 			preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
@@ -294,7 +294,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<b>Var beredd, kategorierna har bytt position!</b><br/>' +
 				'Anv&auml;nd det v&auml;nstra fingret f&ouml;r tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font>.<br/>' +
 				'Anv&auml;nd det h&ouml;gra fingret f&ouml;r tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>ar s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
 				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
