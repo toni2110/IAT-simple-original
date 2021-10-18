@@ -191,7 +191,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; tangenten <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
 				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
-				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
+				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
 				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
@@ -204,7 +204,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det<b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/>',
 						'Objekten kommer visas ett &aring;t g&aring;ngen.<br/>',
 						'<br/>',
-						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>ar s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.',
+						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>ar s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.',
 					'</p>',
 					'<p align="center">Tryck p&aring; <b>det l&auml;gre </b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
@@ -218,7 +218,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Objekten kommer visas ett &aring;t g&aring;ngen.<br/><br/>' +
 				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
-				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
+				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
 				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
@@ -231,7 +231,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font>.<br/>',
 						'Objekten kommer visas ett &aring;t g&aring;ngen.<br/>',
 						'<br/>',
-						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.',
+						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.',
 					'</p>',
 					'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
@@ -245,7 +245,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Varje objekt tillh&ouml;r endast en kategori.<br/><br/>' +
 				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' + 
-				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
 				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instFirstCombinedTouch:[
 				'<div>',
@@ -270,7 +270,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Anv&auml;nd tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>' +
 				'Anv&auml;nd tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.<br/>' +
 				'Varje objekt tillh&ouml;r endast en kategori.<br/><br/>' +
-				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
 				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
@@ -282,7 +282,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>',
 						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.<br/>',
 						'<br/>',
-						'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/>',
+						'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/>',
 					'</p>',
 					'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
@@ -294,7 +294,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<b>Var beredd, kategorierna har bytt position!</b><br/>' +
 				'Anv&auml;nd det v&auml;nstra fingret f&ouml;r tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font>.<br/>' +
 				'Anv&auml;nd det h&ouml;gra fingret f&ouml;r tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
 				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
@@ -308,7 +308,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 							'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> r&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> items.<br/>',
 							'Objekten kommer visas ett &aring;t g&aring;ngen.',
 							'<br/>',
-							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/>',
+							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/>',
 						'</p>',
 						'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
