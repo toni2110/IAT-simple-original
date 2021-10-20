@@ -145,7 +145,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
 			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
-			'TTryck p&aring; den andra sidan f&ouml;r att forts&auml;tta..<p/>',
+			'Tryck p&aring; den andra sidan f&ouml;r att forts&auml;tta..<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -156,7 +156,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Text and style for key instructions displayed about the category labels.
 			leftKeyText : 'Tryck "E" för', 
 			rightKeyText : 'Tryck "I" för', 
-			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000',},
+			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000', padding: '2em',},
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'eller', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
